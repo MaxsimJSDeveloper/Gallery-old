@@ -1,16 +1,13 @@
 import { fetchImages } from './js/pixabay-api';
 import './css/loader-styles.css';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import {
-  renderGallery,
-  galleryElement,
-  showEndOfCollectionMessage,
-} from './js/render-functions';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const scrollToTopBtn = document.querySelector('.scroll-to-top');
+import { showEndOfCollectionMessage } from './js/showEnd';
+import { renderGallery, galleryElement } from './js/render-functions';
 
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
 const searchForm = document.querySelector('.form');
 const inputElement = document.querySelector('.search-input');
 const loader = document.querySelector('.loader');

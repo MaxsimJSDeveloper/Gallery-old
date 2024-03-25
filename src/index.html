@@ -12,20 +12,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="form">
-      <input type="text" class="search-input" placeholder="Search images..." />
-      <button type="submit" class="search-button">Search</button>
-    </form>
+    <header>
+      <form class="form">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </header>
 
-    <ul class="gallery"></ul>
-    <button type="button" class="load-more-btn">Load more</button>
-    <div class="loader"></div>
-
-    <button class="scroll-to-top" type="button">
-      <svg width="24" height="24" class="icon">
-        <use href="./img/icons/symbol-defs.svg#icon-arrow-circle-up"></use>
-      </svg>
-    </button>
+    <main>
+      <ul class="gallery"></ul>
+      <button type="button" class="load-more-btn">Load more</button>
+      <div class="loader"></div>
+    </main>
 
     <script src="https://pixabay.com/api/docs/"></script>
     <script type="module" src="./main.js"></script>

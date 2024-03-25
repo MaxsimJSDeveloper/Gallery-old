@@ -16,10 +16,10 @@ export function renderGallery(images) {
         <a href="${image.largeImageURL}" class="link">
           <img src="${image.webformatURL}" alt="${image.tags}">
           <ul class="list-container">
-          <li class="item-description"><h3>Likes</h3> <p>${image.likes}</p></li>
-          <li class="item-description"><h3>Views</h3> <p>${image.views}</p></li>
-          <li class="item-description"><h3>Comments</h3> <p>${image.comments}</p></li>
-          <li class="item-description"><h3>Downloads</h3> <p>${image.downloads}</p></li>
+          <li class="item-description"><h3 class="item-title">Likes</h3> <p class="item-text">${image.likes}</p></li>
+          <li class="item-description"><h3 class="item-title">Views</h3> <p class="item-text">${image.views}</p></li>
+          <li class="item-description"><h3 class="item-title">Comments</h3> <p class="item-text">${image.comments}</p></li>
+          <li class="item-description"><h3 class="item-title">Downloads</h3> <p class="item-text">${image.downloads}</p></li>
         </ul>
         </a>
         
@@ -28,11 +28,4 @@ export function renderGallery(images) {
     galleryElement.insertAdjacentHTML('beforeend', cardHTML);
   });
   lightbox.refresh();
-}
-export function showEndOfCollectionMessage() {
-  const endMessage = document.createElement('p');
-  endMessage.classList.add('end-message');
-  endMessage.textContent =
-    "We're sorry, but you've reached the end of search results.";
-  galleryElement.insertAdjacentElement('afterend', endMessage);
 }
