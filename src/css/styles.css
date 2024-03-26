@@ -18,9 +18,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 body {
   letter-spacing: 0.04em;
   color: #2e2f42;
+  font: 500 16px / 1.5 'Montserrat', sans-serif;
 }
 .form {
   display: flex;
@@ -34,7 +36,7 @@ body {
   height: 40px;
   border-radius: 8px;
   padding-left: 12px;
-  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  font-weight: 400;
   color: #808080;
   border: 1px solid #808080;
   outline: transparent;
@@ -52,7 +54,7 @@ body {
   padding: 8px 16px;
   width: 91px;
   height: 40px;
-  font: 500 16px / 1.5 'Montserrat', sans-serif;
+
   color: #fff;
   display: flex;
   align-items: center;
@@ -81,11 +83,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.card img {
+
+.card-img {
   width: 360px;
   object-fit: cover;
   height: 152px;
 }
+
 .list-container {
   display: flex;
   flex-direction: row;
@@ -102,6 +106,7 @@ body {
 .item-text {
   margin: 0;
 }
+
 .item-description {
   display: flex;
   flex-direction: column;
@@ -109,6 +114,7 @@ body {
   align-items: center;
   font-size: 12px;
 }
+
 .link {
   width: 100%;
   height: 100%;
@@ -125,7 +131,6 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
-  font: 500 16px / 1.5 'Montserrat', sans-serif;
   color: #fff;
   margin: 40px auto;
 }
