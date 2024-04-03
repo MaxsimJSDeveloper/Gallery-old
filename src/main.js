@@ -118,3 +118,20 @@ function hideEndOfCollectionMessage() {
     endMessage.remove();
   }
 }
+
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    refs.scrollToTopBtn.style.display = 'flex';
+  } else {
+    refs.scrollToTopBtn.style.display = 'none';
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
+refs.scrollToTopBtn.addEventListener('click', scrollToTop);

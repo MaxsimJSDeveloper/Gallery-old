@@ -4,4 +4,5 @@ export const refs = {
   loader: document.querySelector('.loader'),
   loadMoreBtn: document.querySelector('.load-more-btn'),
   galleryElement: document.querySelector('.gallery'),
+  scrollToTopBtn: document.querySelector('.scroll-to-top'),
 };

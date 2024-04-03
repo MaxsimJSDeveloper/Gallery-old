@@ -22,7 +22,6 @@ export function renderGallery(images) {
           <li class="item-description"><h3 class="item-title">Downloads</h3> <p class="item-text">${image.downloads}</p></li>
         </ul>
         </a>
-        
       </li>
     `;
     refs.galleryElement.insertAdjacentHTML('beforeend', cardHTML);
