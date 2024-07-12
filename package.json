@@ -1,11 +1,11 @@
 {
-  "name": "Gallery",
+  "name": "Gallery-old",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Gallery/",
+    "build": "vite build --base=/Gallery-old/",
     "preview": "vite preview"
   },
   "devDependencies": {
